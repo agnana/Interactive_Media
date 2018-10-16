@@ -1,0 +1,164 @@
+/* used to make nav bar NOT elastic*/
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  overflow: auto;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* use % for containers so it moves with the size of screen*/
+.container{
+	width:100%;
+	max-width:700px;
+	margin:auto;
+}
+
+/* Background Images */
+.bg1,
+.bg2{
+	position:fixed;
+	top:550px;
+	opacity:0.80;
+}
+
+.bg1{
+	left:75px;
+	transform:rotate(15deg);
+}
+
+.bg2{
+	right:75px;
+	transform:rotate(-40deg);
+}
+
+/* Navigation Bar - unordered list/list/hyperlink */
+#navbar {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:99999;
+	width:100%;
+	background-color:#CFD7E9;
+	opacity:0.90;
+}
+
+#navbar ul{
+	list-style:none;
+	text-align:center;
+	font-family: 'Muli', sans-serif;
+	font-weight:800px;
+}
+
+#navbar li{
+	display:inline;
+}
+
+#navbar a{
+	color:#131414;
+	text-decoration:none;
+	font-size:20px;
+	padding-right:30px;
+}
+
+/* Series Title + Header Title : Series Image */
+.series-title{
+	font-size:12px;
+	font-family:'Raleway', sans-serif;
+	color:#E86352;
+	text-align:center;
+    position:relative;
+    top:-47vh;
+    right:25.5vh;
+    height:10px;
+}
+
+.header-title{
+	font-size:65px;
+    font-family:'Archivo Black', sans-serif;
+   -webkit-text-stroke: 0.75px #FFFFFF;
+   color:#3F4D9D;
+   text-align:center;
+   position:relative;
+   top:-46vh;
+   height:10px;
+}
+
+.title-image {
+	height:1px;
+	width:100%;
+	text-align:center;	
+	margin-bottom:80vh;
+}
+
+/* Aligment within the Images */
+.title-image img {
+	display:inline-block;
+	width:60%;
+	min-width:400px;
+}
+
+/* Introduction Information */
+.month{
+	font-size:22px;
+	font-family:'Raleway', sans-serif;
+	-webkit-text-stroke: 1px #5366C4;
+	text-align:center;
+}
+
+.info{
+	font-size:16px;
+	font-family:'Nunito', sans-serif;
+	color:#FFF;
+	text-align:center;
+	margin-bottom:2vh;
+
+}
+
+/* Designer Portrait + Event Info */
+.bio-img {
+	width:175px;
+	float:left;
+}
+
+.event-title{
+	font-size:18px;
+	font-family:'Raleway', sans-serif;
+	color:#CFD7E9;
+}
+
+.event-date,
+.event-description{
+	font-size:16px;
+	font-family:'Nunito', sans-serif;
+}
+
+.event-date{
+	font-weight:600px;
+	font-style:italic;
+	color:#DB5B3E;
+}
+
+.event-description{
+	color:#FFF;
+	overflow:hidden;
+   /* overflow: hidden; helped with not wrapping text*/
+}
+
+/* RISD Footer */
+#main-footer{
+	text-align:center;
+	color:#333;
+	font-size:12px;
+	font-family:'Raleway', sans-serif;
+}
+
+a{
+	text-decoration:none;
+	color:#5366C4;
