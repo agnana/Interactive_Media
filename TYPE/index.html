@@ -1,28 +1,38 @@
 <!DOCTYPE html>
+
 <html>
 <head>
+
 	<title> 24 HRS</title>
+	<!-- LINKED FILES + JQUERY ACCESS -->
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/script.js"></script>
 
+	<!-- IMPORTED FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+	<!-- UI JQUERY ACCESS -->
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
 </head>
 <body>
+	<!-- BASIC HTML INFO -->
 	<div class="container">
-	<h1 class="neon" data-text="OPEN 24 HOURS">OPEN 24 HOURS</h1>
-	<h1 class="navigation"> Use arrow keys, space bar, and enter to navigate.</h2>
-	<p id="date"></p>
-		<div id="clock">
-	  	<p class="unit" id="hours"></p>
-		<p class="unit" id="minutes"></p>
-		<p class="unit" id="seconds"></p>
-		<p class="unit" id="ampm"></p>
-		</div>
+		<h1 class="neon" data-text="OPEN 24 HOURS">OPEN 24 HOURS</h1>
+		<h1 class="navigation"> To navigate : ↑ , ↓ , → , ← , ↵ , Space .</h2>
+
+		<p id="date"> 
+			<div id="clock">
+		  	<p class="unit" id="hours"></p>
+			<p class="unit" id="minutes"></p>
+			<p class="unit" id="seconds"></p>
+			<p class="unit" id="ampm"></p>
+			</div>
+		</p>
 	</div>
 </body>
 </html>

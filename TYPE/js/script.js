@@ -85,32 +85,34 @@ $( document ).ready(function() {
 	if (e.keyCode == 13) {
 	$enterHit = $enterHit+35;
 
-
 	if ($enterHit >= 255) {
 	$enterHit = 0
 	}
 
-	$(".neon").css('color', 'rgb(0,0,0,'+$enterHit+')');
-	//how do I make value go from white - fade to that blurred pink
-	console.log($enterHit)
+		$(".neon").css('color', 'rgb(0,0,0,'+$enterHit+')');
+		console.log($enterHit)
 	} 
 
 	// 32 == spaceBar
+
 	if (e.keyCode == 32) {
-	$(".unit").css('font-size', '100%');
+	
+		$(".unit").toggleClass('active');		
+	
 	// how to toggle font-size with space bar? $('.unit').toggle();
 	} 
 
 	// 39 == rightArrow
 	if (e.keyCode == 39) {
-	$("#date").css({'background-color': '#FFF', 'color': '#000', 'opacity': '0.5'});
+
+		$("#date").css({'background-color': '#FFF', 'color': '#000', 'opacity': '0.75'});
 	} 
 
 	// 37 == leftArrow
 	if (e.keyCode == 37) {
-	$("#date").css({'background-color': '#9F1E41', 'color': '#FFF', 'opacity': '0.5'});
-	} 
 
+		$("#date").css({'background-color': '#9F1E41', 'color': '#FFF', 'opacity': '0.75'});
+	} 
 
 })
     });
