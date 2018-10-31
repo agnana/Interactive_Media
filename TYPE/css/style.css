@@ -1,13 +1,13 @@
 /*IMPORTED FONTS*/
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Rajdhani');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+	@import url('https://fonts.googleapis.com/css?family=Quicksand');
+	@import url('https://fonts.googleapis.com/css?family=Raleway');
+	@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+	@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 /* Margin + Padding is 0 for everything*/
 *{
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .container {
@@ -20,40 +20,41 @@ body {
 }
 
 #date{
-  background: rgba(0, 0, 0, 0.3);
-  color: #4C1023;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1em;
-  padding: 2em;
-  text-align: center;
+	background: rgba(0, 0, 0, 0.3);
+	color: #4C1023;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1em;
+	padding: 2em;
+	text-align: center;
 }
 
 #clock{
-  align-items: center;
-  display: -webkit-flex;
-  height: 10px;
-  left: calc(50% - 325px);
-  position: absolute;
-  top:200px;
-  width: 650px;
+	align-items: center;
+	display: -webkit-flex;
+	height: 10px;
+	left: calc(50% - 325px);
+	position: absolute;
+	top:200px;
+	width: 650px;
 }
 
 .unit{
-  -webkit-text-stroke: 0.5px #F2F2F2;
-  color: #272524;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 2.0em;
-  height: 100%;
-  line-height: 130px;
-  margin: 0 10px;
-  text-align: center;
-  text-shadow: 0 1px 1px #272524;
-  width: 23%;
+	-webkit-text-stroke: 0.5px #F2F2F2;
+	color: #272524;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1.75em;
+	height: 100%;
+	line-height: 130px;
+	margin: 0 10px;
+	text-align: center;
+	text-shadow: 0 1px 1px #272524;
+	width: 23%;
 }
 
 .unit.active {
 	font-size: 120%;
-	color: #9F1E41; 
+	color: #000; 
+	-webkit-text-stroke: 1px #9F1E41;
 }
 .navigation{
 	font-family: 'Raleway', sans-serif;
@@ -61,10 +62,10 @@ body {
 	color:#F2F2F2;
 	opacity:0.5;
 	font-size: 0.75em;
-	letter-spacing: 0.0625em;
+	letter-spacing: 0.25em;
 	position: absolute;
-	top:65%;
-	left:58%;
+	top:63%;
+	left:60%;
 	transform: translate(-85%,-60%);
 	margin:0;
 	padding:0 20px;
@@ -86,6 +87,7 @@ body {
 
 	
 }
+
 .neon:after,
 .neon:before{
 	position: absolute;
@@ -107,6 +109,7 @@ body {
 	width: 100%;
 	height: 50%;
 	background: #FE3A80;
+	/*This color is another kind of fuschia*/
 	z-index: -2;
 	opacity: .5;
 	filter: blur(60px);

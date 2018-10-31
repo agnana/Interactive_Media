@@ -53,7 +53,7 @@ $( document ).ready(function() {
 
 	window.setInterval(update, 1000);
     $('h1.navigation').fadeOut(0);
-    $('h1.navigation').fadeIn(2500);
+    $('h1.navigation').fadeIn(3500);
 
     $(document).keydown(function(e){
 	//console.log(e.keyCode) - this shows what the key is for each button you press
@@ -111,7 +111,7 @@ $( document ).ready(function() {
 	// 37 == leftArrow
 	if (e.keyCode == 37) {
 
-		$("#date").css({'background-color': '#9F1E41', 'color': '#FFF', 'opacity': '0.75'});
+		$("#date").css({'background-color': '#E23171', 'color': '#FFF', 'opacity': '0.75'});
 	} 
 
 })
