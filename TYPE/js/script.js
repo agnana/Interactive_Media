@@ -1,10 +1,12 @@
 $( document ).ready(function() {
     console.log( "ready!" );
+    //entire js for the clock + setting variables for each component
     var $dOut = $('#date'),
     $hOut = $('#hours'),
     $mOut = $('#minutes'),
     $sOut = $('#seconds'),
     $ampmOut = $('#ampm'),
+    //setting variable enterhit to alter the alpha value w/ neon sign (enter button)
     $enterHit = 0;
 	var months = [
 	  'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
@@ -15,6 +17,7 @@ $( document ).ready(function() {
 	];
 
 	function update(){
+	  //getting realtime
 	  var date = new Date();
 	  
 	  var ampm = date.getHours() < 12
@@ -51,9 +54,11 @@ $( document ).ready(function() {
 
 	update();
 
-	window.setInterval(update, 1000);
+	window.setInterval(update, 2000);
+    //the navigation heading set to fade in + out
     $('h1.navigation').fadeOut(0);
-    $('h1.navigation').fadeIn(3500);
+    $('h1.navigation').fadeIn(2500);
+   
 
     $(document).keydown(function(e){
 	//console.log(e.keyCode) - this shows what the key is for each button you press
@@ -82,24 +87,22 @@ $( document ).ready(function() {
 	console.log(fs)
 	}
 
+	// 13== enter.
 	if (e.keyCode == 13) {
 	$enterHit = $enterHit+35;
 
 	if ($enterHit >= 255) {
 	$enterHit = 0
 	}
-
 		$(".neon").css('color', 'rgb(0,0,0,'+$enterHit+')');
 		console.log($enterHit)
 	} 
 
 	// 32 == spaceBar
-
 	if (e.keyCode == 32) {
-	
+		
 		$(".unit").toggleClass('active');		
-	
-	// how to toggle font-size with space bar? $('.unit').toggle();
+		// this is how to toggle using a key element
 	} 
 
 	// 39 == rightArrow

@@ -1,8 +1,8 @@
 /*IMPORTED FONTS*/
-	@import url('https://fonts.googleapis.com/css?family=Quicksand');
-	@import url('https://fonts.googleapis.com/css?family=Raleway');
-	@import url('https://fonts.googleapis.com/css?family=Rajdhani');
-	@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 /* Margin + Padding is 0 for everything*/
 *{
@@ -12,6 +12,7 @@
 
 .container {
 	text-align:center;
+	margin:auto;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
 
 #date{
 	background: rgba(0, 0, 0, 0.3);
-	color: #4C1023;
+	color: #831E3B;
 	font-family: 'Roboto Mono', monospace;
 	font-size: 1em;
 	padding: 2em;
@@ -31,10 +32,10 @@ body {
 #clock{
 	align-items: center;
 	display: -webkit-flex;
-	height: 10px;
+	/* This is what makes the clock show horizontally */
 	left: calc(50% - 325px);
-	position: absolute;
-	top:200px;
+	position: relative;
+	top:150px;
 	width: 650px;
 }
 
@@ -43,19 +44,19 @@ body {
 	color: #272524;
 	font-family: 'Roboto Mono', monospace;
 	font-size: 1.75em;
-	height: 100%;
 	line-height: 130px;
 	margin: 0 10px;
 	text-align: center;
-	text-shadow: 0 1px 1px #272524;
-	width: 23%;
+	text-shadow: 0 1px 1px #FF005B;
+	width: 30%;
 }
 
 .unit.active {
-	font-size: 120%;
+	font-size: 130%;
 	color: #000; 
 	-webkit-text-stroke: 1px #9F1E41;
 }
+
 .navigation{
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
@@ -67,14 +68,11 @@ body {
 	top:63%;
 	left:60%;
 	transform: translate(-85%,-60%);
-	margin:0;
-	padding:0 20px;
-
+	padding:0 10px;
 }
 
 .neon{
 	position:absolute;
-	align-items: center;
 	text-align:center;
 	top:50%;
 	left:50%;
@@ -82,10 +80,8 @@ body {
 	padding:0 20px;
 	font-size:5em;
 	color: #FEFEFA;
-	opacity: 0.80;
+	opacity: 0.90;
 	text-shadow: 0 0 20px #FF005B;
-
-	
 }
 
 .neon:after,
@@ -101,7 +97,7 @@ body {
 	z-index: -1;
 	color: #FF005B;
 	/*This color is fuschia*/
-	filter: blur(25px);
+	filter: blur(20px);
 }
 
 .neon:before{
@@ -111,9 +107,8 @@ body {
 	background: #FE3A80;
 	/*This color is another kind of fuschia*/
 	z-index: -2;
-	opacity: .5;
+	opacity: .45;
 	filter: blur(60px);
-
 }
 
 
