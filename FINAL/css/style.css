@@ -25,6 +25,7 @@ h2{
 }
 
 */
+
 .ovo-artists {
   width:100vw;
   height:100vh; 
@@ -46,6 +47,17 @@ h2{
   color: transparent;
 
 }
+
+.ovo-songs {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.50em;
+    color: #FEDA00;
+    position:absolute;
+    top:650px;
+    left:700px;
+}
+
 
 #OVO{
   -webkit-text-stroke: 2px #FFFFFF;
