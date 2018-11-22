@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Palanquin+Dark:700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300');
+
+body{
+  background:#101010;
+}
+
+.ovo{
+  width:100vw;
+  height:100vh; 
+  font-size: 10vw;
+  font-family: 'Palanquin Dark', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+}
+
+.ovo-song-cell{
+  width:100vw;
+  height:100vh;
+  background:#101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
+
+.ovo-artist-cell{
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.50em;
+    -webkit-text-stroke: 1px;
+    display: flex;
+    float:left;
+    position: absolute;
+    top:62%;
+    clear:left;
+    font-size:1.5vw;
+    float:left;  
+}
+
+/* The Song + Artist Name */
+#OVO{
+  -webkit-text-stroke: 2px #FFFFFF;
+  color:#101010;
+  position: relative;
+}
+  #stream{
+    color:#FFFF;
+  }
+ 
+#Spirit{
+  background-image: url(http://majidjordan.com/app/uploads/2018/01/majid-jordan-spirit-play3_mobile.jpg);
+  background-size: initial;
+}
+  #majid{
+  color: #F59297;
+  }
+
+#Mood{
+  background-image: url(https://i.ytimg.com/vi/baxImKUepXM/maxresdefault.jpg);
+  background-size: initial;
+}
+  #dvsn{
+  color:#AD386E;
+  }
+
+#NotNice{
+  background-image: url(https://pbs.twimg.com/media/Cn8ZjnpW8AANdth.jpg);
+  background-size: cover;
+}
+  #pnd{
+  color:#F9A11B;
+  }
+
+#Switch{
+  background-image: url(http://images.genius.com/f8b7b5322cfee561373377996f1d52a6.1000x1000x1.jpg);
+  background-size: cover;
+}
+  #roy{
+  color:#8C291E;
+}
+
+#Personal{
+  background-image: url(https://cdn.singersroom.com/wp-content/uploads/2016/11/Plaza-Personal.jpg);
+  background-size: cover;
+}
+  #plaza{
+    color:#EDD8E9;
+  }
