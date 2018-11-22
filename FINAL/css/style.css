@@ -53,9 +53,12 @@ h2{
     text-transform: uppercase;
     letter-spacing: 0.50em;
     color: #FEDA00;
-    position:absolute;
-    top:650px;
-    left:700px;
+}
+
+.ovo-song-cell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
