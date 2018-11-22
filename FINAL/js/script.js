@@ -5,7 +5,7 @@ $( document ).ready(function() {
       $("h2").click(function(){
        $("h2").fadeTo("medium", 0.50);
     });
-      $('.ovo-artists').flickity({
+      $('.ovo').flickity({
   // options
   cellAlign: 'left',
   contain: true
