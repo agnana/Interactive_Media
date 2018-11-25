@@ -1,13 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Palanquin+Dark:700');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300');
 
+html,
 body{
   background:#101010;
+  margin:0;
+}
+
+.flickity-page-dots {
+  bottom: -22px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
 }
 
 .ovo{
   width:100vw;
-  height:100vh; 
+  height:80vh; 
   font-size: 10vw;
   font-family: 'Palanquin Dark', sans-serif;
   text-transform: uppercase;
@@ -16,7 +29,7 @@ body{
 
 .ovo-song-cell{
   width:100vw;
-  height:100vh;
+  height:80vh;
   background:#101010;
   display: flex;
   justify-content: center;
