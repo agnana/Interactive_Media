@@ -19,11 +19,18 @@
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300" rel="stylesheet">
 
 
-
-
 </head>
 <body>
 	<!-- SONG + ARTIST NAME -->
+	<div id="player"></div>
+    <button id="play">PND</button>
+    <button id="play2">MAJID JORDAN</button>
+    <button id="play3">ROY WOODS</button>
+    <button id="play4">PLAZA</button>
+    <button id="play5">DVSN</button>
+    <button id="stop">stop</button>
+  	</div>
+
 	<div class="ovo">
   		<div class="ovo-song-cell" id='OVO'> True Ovo <div class="ovo-artist-cell" id='stream'> Stream Toronto Artists Under The Label. </div></div>
   		<div class="ovo-song-cell" id ='Spirit'> Spirit <div class="ovo-artist-cell" id='majid'> Majid Jordan </div></div>
@@ -31,8 +38,101 @@
   		<div class="ovo-song-cell" id ='NotNice'> Not Nice <div class="ovo-artist-cell" id='pnd'> PartyNextDoor </div> </div>
   		<div class="ovo-song-cell" id ='Switch'> Switch <div class="ovo-artist-cell" id='roy'> Roy Woods </div></div>
   		<div class="ovo-song-cell" id ='Personal'> Personal <div class="ovo-artist-cell" id='plaza'> Plaza </div></div>
-  	</div>
-  	
+  		<div class="ovo-song-cell" id ='About'> About True OVO <div class="ovo-artist-cell" id='true'><div> True OVO is a platform that samples a song to represent each artist under the label (OVO). Not only are these artists quite talented - they all were raised in Toronto. To listen to other songs by these artists please click <a href="https://open.spotify.com/user/22or5tpelhu5rhkzqwbbpmani/playlist/3r7ilAQj3YGXd50UBgNIMG?si=kGMdX0fyTze3JPJsfOtlxw">here.</a> </div></div>
+
+  	<script>
+  		 // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'pt3N4O2de8U',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+
+
+
+      $("#play").click(function(){
+        player.loadVideoById("5L7g17qvaH0");
+        playVideo();
+
+      })
+
+
+
+      $("#play2").click(function(){
+        player.loadVideoById("5mEOjwf55u8");
+        playVideo();
+
+      })
+
+
+      $("#play3").click(function(){
+        player.loadVideoById("cFkoM7QLMwY");
+        playVideo();
+
+      })
+
+      $("#play4").click(function(){
+        player.loadVideoById("4WI_lF_xxG4");
+        playVideo();
+
+      })
+
+        $("#play5").click(function(){
+        player.loadVideoById("bDSx_OOR66A");
+        playVideo();
+
+      })
+
+
+    //bDSx_OOR66A
+
+      $("#stop").click(function(){
+        stopVideo();
+      })
+
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+
+      function playVideo() {
+        player.playVideo();
+      } 
+  	</script>
 </body>
 </html>
 
