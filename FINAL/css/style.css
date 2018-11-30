@@ -7,6 +7,26 @@ body{
   margin:0;
 }
 
+/* STYLING FOR HYPERLNKS + BUTTONS */
+  a{
+  text-decoration:none;
+  color:#FFFF;
+}
+  button {
+    padding:10px 24px;;
+    color:#FFFF;
+    background:#000;
+    border: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    -webkit-transition-duration: 0.5s; 
+    transition-duration: 0.5s;
+  }
+
+  button:hover {
+    background-color: #FEDA00; /* GOLDEN YELLOW */
+    color: #000;
+}
+
 #player {
         width:1px; height:1px;
       }
@@ -25,7 +45,7 @@ body{
 .ovo{
   width:100vw;
   height:80vh; 
-  font-size: 10vw;
+  font-size: 9vw;
   font-family: 'Palanquin Dark', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.10em;
@@ -63,87 +83,49 @@ body{
   position: relative;
 }
   #stream{
-    color:#FEDA00;
+    color:#E0D3BF;
   }
  
-#Spirit{
-  background-image: url(http://majidjordan.com/app/uploads/2018/01/majid-jordan-spirit-play3_mobile.jpg);
-  background-size: initial;
+#Free{
+  background-image: url(http://majidjordan.com/app/uploads/2018/09/majid-jordan-spirit-banner2.jpg);
+  background-size: 60%;
 }
   #majid{
-  color: #F59297;
+  color: #EB494B;
   }
 
 #Mood{
-  background-image: url(https://i.ytimg.com/vi/baxImKUepXM/maxresdefault.jpg);
-  background-size: initial;
+  background-image: url(https://aestheticmag.files.wordpress.com/2017/07/dvsn-canada-150-toronto-2017-2-copy.jpg);
+  background-size: 60%;
 }
   #dvsn{
-  color:#AD386E;
+  color:#7A3CA6;
   }
 
-#NotNice{
-  background-image: url(https://pbs.twimg.com/media/Cn8ZjnpW8AANdth.jpg);
-  background-size: cover;
+#Naked{
+  background-image: url(https://media.gq.com/photos/57b5c8a57c4c5fcf03df6337/16:9/pass/party-next-door-04.jpg);
+  background-size: 60%;
 }
   #pnd{
-  color:#F9A11B;
+  color:#D89369;
   }
 
-#Switch{
-  background-image: url(http://images.genius.com/f8b7b5322cfee561373377996f1d52a6.1000x1000x1.jpg);
-  background-size: cover;
+#NewNew{
+  background-image: url(https://static.highsnobiety.com/wp-content/uploads/2016/04/20111936/ovo-spring-2016-roy-woods-00.jpg);
+  background-size: 60%;
 }
   #roy{
-  color:#8C291E;
+  color:#FEFDFB;
 }
 
 #Personal{
-  background-image: url(https://cdn.singersroom.com/wp-content/uploads/2016/11/Plaza-Personal.jpg);
-  background-size: cover;
+  background-image: url(http://www.16bars.de/wp-content/uploads/2017/06/Bildschirmfoto-2017-06-12-um-15.05.17-750x400.png);
+  background-size: 60%;
 }
   #plaza{
     color:#EDD8E9;
   }
-
-#About{
-  -webkit-text-stroke: 1px #FFFFFF;
-  color:#101010;
-  position: relative;
-  font-size:1.5vw;
-  letter-spacing: 0.50em;
-}
-  #true{
-    font-family: 'IBM Plex Sans', sans-serif;
-    text-transform: uppercase;
-    font-size:0.75vw;
-    color:#FEDA00;
-    padding: 0.1vh 30vh;
-    text-align:center;
-
-  }
-
-/* STYLING FOR HYPERLNKS + BUTTONS */
-  a{
-  text-decoration:none;
-  color:#FFFF;
-}
-  button {
-    padding:10px 24px;;
-    color:#FFFF;
-    background:#000;
-    border: none;
-    font-family: 'IBM Plex Sans', sans-serif;
-    -webkit-transition-duration: 0.5s; 
-    transition-duration: 0.5s;
-  }
-
-  button:hover {
-    background-color: #FEDA00; /* GOLDEN YELLOW */
-    color: #000;
-}
-
-
+  
 .container {
   height: 100vh;
   width: 100%;

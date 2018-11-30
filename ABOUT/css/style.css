@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Palanquin+Dark:700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300');
+
+html,
+body{
+  background:#101010;
+  margin:0;
+}
+
+/* STYLING FOR HYPERLNKS + BUTTONS */
+  a{
+  text-decoration:none;
+  color:#FFFF;
+}
+
+.ovo{
+  width:100vw;
+  height:80vh; 
+  font-size: 9vw;
+  font-family: 'Palanquin Dark', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+}
+
+.ovo-song-cell{
+  width:100vw;
+  height:80vh;
+  background:#101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
+
+.ovo-artist-cell{
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.50em;
+    -webkit-text-stroke: 1px;
+    display: flex;
+    position: absolute;
+    top:62%;
+    font-size:1.5vw;
+    float:left;  
+}
+
+/* The Song + Artist Name */
+
+
+#About{
+  -webkit-text-stroke: 1px #FFFFFF;
+  color:#101010;
+  position: relative;
+  font-size:1.5vw;
+  letter-spacing: 0.50em;
+}
+  #true{
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: uppercase;
+    font-size:0.75vw;
+    color:#FEDA00;
+    padding: 0.1vh 30vh;
+    text-align:center;
+
+  }
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+
+.hidden {
+  opacity: 0;
+}
