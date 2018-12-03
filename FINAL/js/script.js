@@ -1,9 +1,7 @@
-
-
 $( document ).ready(function() {
 
-    $("h2").click(function(){
-       $("h2").fadeTo("medium", 0.50);
+    $(".ovo-artist-cell").click(function(){
+       $(".ovo-artist-cell").fadeTo("medium", 0.50);
     });
     
 
