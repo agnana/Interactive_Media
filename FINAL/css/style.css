@@ -1,287 +1,256 @@
 /* FONT IMPORTS */
-  @import url('https://fonts.googleapis.com/css?family=Palanquin+Dark:700');
-  @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300');
-  @import url('https://fonts.googleapis.com/css?family=Quantico');
+@import url('https://fonts.googleapis.com/css?family=Palanquin+Dark:700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Quantico');
 
 /* STYLING FOR ENTIRE SITE */
-  html,
-  body{
-    background:#101010;
-    margin:0;
-  }
-
-  .container {
-  height: 100vh;
-  width: 100%;
-  }
+html,
+body{
+background:#101010;
+margin:0;
+}
+.container {
+height: 100vh;
+width: 100%;
+}
 
 /* STYLING FOR HYPERLNKS + BUTTONS */
-    a{
-    text-decoration:none;
-    color:#FFFF;
-  }
-
-    button {
-      padding:10px 24px;;
-      color:#FFFF;
-      background:#000;
-      border: none;
-      font-family: 'Quantico', sans-serif;
-      opacity:0.75;
-      -webkit-transition-duration: 0.50s; 
-      transition-duration: 0.50s;
-    }
-
-    button:hover {
-      background-color: #FEDA00; /* GOLDEN YELLOW */
-      color: #000;
-  }
-
-  #menu{
-    position: fixed;
-    top: 25%;
-    left: 50%;
-    transform:translateX(-50%);
-    z-index:1;
-  }
-
-  #option{
-    position: fixed;
-    top: 65%;
-    left: 50%;
-    transform:translateX(-50%);
-    z-index:1;
-  }
+a{
+text-decoration:none;
+color:#FFFF;
+}
+button {
+padding:10px 24px;;
+color:#FFFF;
+background:#000;
+border: none;
+font-family: 'Quantico', sans-serif;
+opacity:0.75;
+-webkit-transition-duration: 0.50s; 
+transition-duration: 0.50s;
+}
+button:hover {
+background-color: #FEDA00; /* GOLDEN YELLOW */
+color: #000;
+}
+#menu{
+position: fixed;
+top: 25%;
+left: 50%;
+transform:translateX(-50%);
+z-index:1;
+}
+#option{
+position: fixed;
+top: 67%;
+left: 50%;
+transform:translateX(-50%);
+z-index:1;
+}
 
 /* FLICKITY DOTS TO LINES */
-  .flickity-page-dots {
-    bottom: -22px;
-  }
-  .flickity-page-dots .dot {
-    height: 4px;
-    width: 40px;
-    margin: 0;
-    border-radius: 0;
-  }
-
-  .flickity-button {
-    position: absolute;
-    background: none;
-  }
-
-  .flickity-button-icon {
-    fill: #FFF;
+.flickity-page-dots {
+bottom: -22px;
 }
-  .flickity-button:hover {
-      background: none;
-      cursor: pointer;
+.flickity-page-dots .dot {
+height: 4px;
+width: 40px;
+margin: 0;
+border-radius: 0;
+}
+.flickity-button {
+position: absolute;
+background: none;
+}
+.flickity-button-icon {
+fill: #FFF;
+}
+.flickity-button:hover {
+background: none;
+cursor: pointer;
 }
 
 /* STYLING FOR THE HAMBURGER MENU */
-  .toggle-button {
-    position: fixed;
-    top: 10px;
-    /*HORIZONTAL CENTERING: https://css-tricks.com/forums/topic/horizontal-centering-of-an-absolute-element/ */
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);  
-    padding: 9px 10px;
-    margin: 8px 15px 8px 0;
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-    z-index: 3;
-  }
-
-  .bar {
-    background-color: none;
-    outline-width: 0.25px;
-    outline-style: solid;
-    color:#FFFF;
-    display:block;
-    width: 100%;
-    height: 4px;
-    /*border: 0;*/
-    -webkit-transition: all .50s ease;
-    transition: all .50s ease;
-  }
-
-  .bar + .bar {
-    margin-top: 4px;
-  }
-
-  .middle {
-    top: 15px;
-  }
-
-  .bottom {
-    top: 30px;
-  }
-
-  .toggle-button:hover {
-    opacity: .75;
-  }
-
-  .toggle-active .bar {
-    background-color: #FEDA00;
-  }
-
-  .toggle-active .top {
-    -webkit-transform: translateY(10px) translateX(0) rotate(45deg);
-  }
-
-  .toggle-active .middle {
-    opacity: 0;
-  }
-
-  .toggle-active .bottom {
-    -webkit-transform: translateY(-6px) translateX(0) rotate(-45deg);
-  }
-
+.toggle-button {
+position: fixed;
+top: 10px;
+/*HORIZONTAL CENTERING: https://css-tricks.com/forums/topic/horizontal-centering-of-an-absolute-element/ */
+left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);  
+padding: 9px 10px;
+margin: 8px 15px 8px 0;
+height: 30px;
+width: 30px;
+cursor: pointer;
+z-index: 3;
+}
+.bar {
+background-color: none;
+outline-width: 0.25px;
+outline-style: solid;
+color:#FFFF;
+display:block;
+width: 100%;
+height: 4px;
+/*border: 0;*/
+-webkit-transition: all .50s ease;
+transition: all .50s ease;
+}
+.bar + .bar {
+margin-top: 4px;
+}
+.middle {
+top: 15px;
+}
+.bottom {
+top: 30px;
+}
+.toggle-button:hover {
+opacity: .75;
+}
+.toggle-active .bar {
+background-color: #FEDA00;
+}
+.toggle-active .top {
+-webkit-transform: translateY(10px) translateX(0) rotate(45deg);
+}
+.toggle-active .middle {
+opacity: 0;
+}
+.toggle-active .bottom {
+-webkit-transform: translateY(-6px) translateX(0) rotate(-45deg);
+}
 
 /* STYLING FOR THE OVERLAY. THE SLIDING-DOWN EFFECT OF THE OVERLAY IS GIVEN BY THE INITIAL ZERO HEIGHT AND THE ONCLICK 100% HEIGHT */
-  .overlay {
-    position: fixed;
-    background-image: linear-gradient(180deg, #262626 0%, #101010 100%);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: opacity .30s, visibility .30s, height .30s;
-    z-index:2;
-  }
-
+.overlay {
+position: fixed;
+background-image: linear-gradient(180deg, #262626 0%, #101010 100%);
+top: 0;
+left: 0;
+width: 100%;
+height: 0;
+visibility: hidden;
+opacity: 0;
+-webkit-transition: opacity .30s, visibility .30s, height .30s;
+z-index:2;
+}
 
 /* CLASS ADDED TO THE OVERLAY ON CLICK*/
-  .nav-active {
-    opacity: 1;
-    visibility: visible;
-    height: 100%;
-  }
-
-  .overlay ul {
-    display: block;
-    position: relative;
-    top: 60px;
-    left: 0;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size:1.10vw;
-    letter-spacing: 0.50em;
-    text-transform: uppercase;
-    text-align: center;
-    list-style: none;
-    padding: 0;
-  }
-
-  .overlay ul li {
-    display: block;
-  }
-
-  .overlay ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .hidden {
-    opacity: 0;
-  }
+.nav-active {
+opacity: 1;
+visibility: visible;
+height: 100%;
+}
+.overlay ul {
+display: block;
+position: relative;
+top: 60px;
+left: 0;
+font-family: 'IBM Plex Sans', sans-serif;
+font-size:1.10vw;
+letter-spacing: 0.50em;
+text-transform: uppercase;
+text-align: center;
+list-style: none;
+padding: 0;
+}
+.overlay ul li {
+display: block;
+}
+.overlay ul li a {
+color: #fff;
+text-decoration: none;
+}
+.hidden {
+opacity: 0;
+}
 
 /* OVO CELLS */
-  .ovo{
-    width:100vw;
-    height:80vh; 
-    font-size: 9vw;
-    font-family: 'Palanquin Dark', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.10em;
-  }
+.ovo{
+width:100vw;
+height:80vh; 
+font-size: 9vw;
+font-family: 'Palanquin Dark', sans-serif;
+text-transform: uppercase;
+letter-spacing: 0.10em;
+}
+.ovo-song-cell{
+width:100vw;
+height:80vh;
+background:#101010;
+display: flex;
+justify-content: center;
+align-items: center;
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+}
+.ovo-artist-cell{
+font-family: 'IBM Plex Sans', sans-serif;
+text-transform: uppercase;
+letter-spacing: 0.50em;
+-webkit-text-stroke: 1px;
+display: flex;
+position: absolute;
+top:68%;
+font-size:1.5vw;
+float:left;  
+}
 
-  .ovo-song-cell{
-    width:100vw;
-    height:80vh;
-    background:#101010;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+/* THE SONG + ARTIST NAME */
+#OVO{
+-webkit-text-stroke: 1.5px #FFFFFF;
+color:#101010;
+position: relative;
+}
+  #stream{
+  color:#F1DD38;
   }
-
-  .ovo-artist-cell{
-      font-family: 'IBM Plex Sans', sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 0.50em;
-      -webkit-text-stroke: 1px;
-      display: flex;
-      position: absolute;
-      top:68%;
-      font-size:1.5vw;
-      float:left;  
+#Free{
+background-image: url(http://majidjordan.com/app/uploads/2018/09/majid-jordan-spirit-banner2.jpg);
+background-size: 60%;
+}
+  #majid{
+  color: #EB494B;
   }
-
-/* The Song + Artist Name */
-  #OVO{
-    -webkit-text-stroke: 1.5px #FFFFFF;
-    color:#101010;
-    position: relative;
+#Naked{
+background-image: url(https://media.gq.com/photos/57b5c8a57c4c5fcf03df6337/16:9/pass/party-next-door-04.jpg);
+background-size: 60%;
+}
+  #pnd{
+  color:#D89369;
   }
-    #stream{
-      color:#F1DD38;
-    }
-   
-  #Free{
-    background-image: url(http://majidjordan.com/app/uploads/2018/09/majid-jordan-spirit-banner2.jpg);
-    background-size: 60%;
-  }
-    #majid{
-    color: #EB494B;
-    }
-
-  #Naked{
-    background-image: url(https://media.gq.com/photos/57b5c8a57c4c5fcf03df6337/16:9/pass/party-next-door-04.jpg);
-    background-size: 60%;
-  }
-    #pnd{
-    color:#D89369;
-    }
-
-  #NewNew{
-  background-image: url(https://static.highsnobiety.com/wp-content/uploads/2016/04/20111936/ovo-spring-2016-roy-woods-00.jpg);
-  background-size: 60%;
-  }
+#NewNew{
+background-image: url(https://static.highsnobiety.com/wp-content/uploads/2016/04/20111936/ovo-spring-2016-roy-woods-00.jpg);
+background-size: 60%;
+}
   #roy{
   color:#FEFDFB;
   }
-
-  #Mood{
-    background-image: url(https://aestheticmag.files.wordpress.com/2017/07/dvsn-canada-150-toronto-2017-2-copy.jpg);
-    background-size: 60%;
+#Mood{
+background-image: url(https://aestheticmag.files.wordpress.com/2017/07/dvsn-canada-150-toronto-2017-2-copy.jpg);
+background-size: 60%;
+}
+  #dvsn{
+  color:#7A3CA6;
   }
-    #dvsn{
-    color:#7A3CA6;
-    }
-
-  #Personal{
-    background-image: url(http://www.16bars.de/wp-content/uploads/2017/06/Bildschirmfoto-2017-06-12-um-15.05.17-750x400.png);
-    background-size: 60%;
+#Personal{
+background-image: url(http://www.16bars.de/wp-content/uploads/2017/06/Bildschirmfoto-2017-06-12-um-15.05.17-750x400.png);
+background-size: 60%;
+}
+  #plaza{
+  color:#EDD8E9;
   }
-    #plaza{
-      color:#EDD8E9;
-    }
 
 /* MEDIA DIMENSIONS */
-
-  @media (max-width: 1000px)  and (orientation: portrait) {
-    .ovo {
-      font-size:15vw;
-    }
-  }
-
+@media (max-width: 1000px)  and (orientation: portrait) {
+.ovo {
+font-size:15vw;
+}
+}
 @media (max-width: 1000px)  and (orientation: landscape) {
-    .ovo {
-      font-size:30vw;
-    }
-  }
+.ovo {
+font-size:30vw;
+}
+}

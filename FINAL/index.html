@@ -1,161 +1,169 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>TRUE OVO SOUND</title>
-	<!-- LINKED FILES + JQUERY ACCESS -->
-  <script src="https://www.youtube.com/iframe_api"></script>
-	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-	<script src="js/script.js"></script>
+   <head>
+      <title>TRUE OVO SOUND</title>
+      <!-- LINKED FILES + JQUERY ACCESS -->
+      <script src="https://www.youtube.com/iframe_api"></script>
+      <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+      <script src="js/script.js"></script>
+      <!-- FLICKITY ACCESS -->
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+      <!-- CSS LINKED FILE (HAS TO BE AFTER FLICKITY) -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- IMPORTED FONTS -->
+      <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Quantico" rel="stylesheet">
+   </head>
 
-	<!-- FLICKITY ACCESS -->
-	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+   <body>
+      <!--  HAMBURGER MENU - CREATED WITH SPAN ELEMENTS -->
+      <div class="navbar-header">
+         <div class="toggle-button" id="toggle">
+            <span class="bar top"></span>
+            <span class="bar middle"></span>
+            <span class="bar bottom"></span>
+         </div>
+      </div>
+      <!-- MARKUP FOR THE OVERLAY-->
+      <nav class="overlay" id="overlay">
+         <ul>
+            <li><a href="https://agnana.github.io/Interactive_Media/ABOUT/" target="_blank">True OVO</a></li>
+            <li><a href="https://open.spotify.com/user/22or5tpelhu5rhkzqwbbpmani/playlist/3r7ilAQj3YGXd50UBgNIMG?si=kGMdX0fyTze3JPJsfOtlxw" target="_blank">Spotify Playlist</a></li>
+         </ul>
+      </nav>
+      <!-- SONG + ARTIST NAME BUTTONS -->
+      <div id="player"></div>
+      <div id="menu"> 
+         <button id="play" class="button" data-index="1">MAJID JORDAN</button>
+         <button id="play2" class="button" data-index="2">PND</button>
+         <button id="play3" class="button" data-index="3">ROY WOODS</button>
+         <button id="play4" class="button" data-index="4">DVSN</button>
+         <button id="play5" class="button" data-index="5">PLAZA</button>
+      </div>
+      <div id="player2"></div>
+      <div id="option">
+         <button id="playing" class="button">►</button>
+         <button id="stop" class="button">◼</button>
+         <button id="restart" class="button" data-index="0">↺</button>
+      </div>
+      <!-- SONG + ARTIST NAME -->
+      <div class="ovo">
+         <div class="ovo-song-cell" id='OVO'>
+            True Ovo 
+            <div class="ovo-artist-cell" id='stream'> Stream Toronto Artists Under The Label. </div>
+         </div>
+         <div class="ovo-song-cell" id ='Free'>
+            Free (Us) 
+            <div class="ovo-artist-cell" id='majid'> Majid Jordan </div>
+         </div>
+         <div class="ovo-song-cell" id ='Naked'>
+            Naked 
+            <div class="ovo-artist-cell" id='pnd'> PartyNextDoor </div>
+         </div>
+         <div class="ovo-song-cell" id ='NewNew'>
+            New New 
+            <div class="ovo-artist-cell" id='roy'> Roy Woods </div>
+         </div>
+         <div class="ovo-song-cell" id ='Mood'>
+            Mood 
+            <div class="ovo-artist-cell" id='dvsn'> DVSN </div>
+         </div>
+         <div class="ovo-song-cell" id ='Personal'>
+            Wanting You 
+            <div class="ovo-artist-cell" id='plaza'> Plaza </div>
+         </div>
+      </div>
 
-	<!-- CSS LINKED FILE (HAS TO BE AFTER FLICKITY) -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- IMPORTED FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quantico" rel="stylesheet">
-</head>
-
-<body>
-  <!--  HAMBURGER MENU - CREATED WITH SPAN ELEMENTS -->
-  <div class="navbar-header">
-    <div class="toggle-button" id="toggle">
-      <span class="bar top"></span>
-      <span class="bar middle"></span>
-      <span class="bar bottom"></span>
-    </div>
-  </div>
-  
-  <!-- MARKUP FOR THE OVERLAY-->
-  <nav class="overlay" id="overlay">
-    <ul>
-      <li><a href="https://agnana.github.io/Interactive_Media/ABOUT/" target="_blank">True OVO</a></li>
-      <li><a href="https://open.spotify.com/user/22or5tpelhu5rhkzqwbbpmani/playlist/3r7ilAQj3YGXd50UBgNIMG?si=kGMdX0fyTze3JPJsfOtlxw" target="_blank">Spotify Playlist</a></li>
-    </ul>
-  </nav>
-
-	<!-- SONG + ARTIST NAME BUTTONS -->
-	<div id="player"></div>
-    <div id="menu"> 
-      <button id="play" class="button" data-index="1">MAJID JORDAN</button>
-      <button id="play2" class="button" data-index="2">PND</button>
-      <button id="play3" class="button" data-index="3">ROY WOODS</button>
-      <button id="play4" class="button" data-index="4">DVSN</button>
-      <button id="play5" class="button" data-index="5">PLAZA</button>
-  	 </div>
-
-  <div id="player2"></div>
-  <div id="option">
-      <button id="playing" class="button">►</button>
-      <button id="stop" class="button">◼</button>
-      <button id="restart" class="button" data-index="0">↺</button>
-  </div>
-
-  <!-- SONG + ARTIST NAME -->
-	<div class="ovo">
-  		<div class="ovo-song-cell" id='OVO'> True Ovo <div class="ovo-artist-cell" id='stream'> Stream Toronto Artists Under The Label. </div></div>
-      <div class="ovo-song-cell" id ='Free'> Free (Us) <div class="ovo-artist-cell" id='majid'> Majid Jordan </div></div>
-  		<div class="ovo-song-cell" id ='Naked'> Naked <div class="ovo-artist-cell" id='pnd'> PartyNextDoor </div></div>
-      <div class="ovo-song-cell" id ='NewNew'> New New <div class="ovo-artist-cell" id='roy'> Roy Woods </div></div>
-  		<div class="ovo-song-cell" id ='Mood'> Mood <div class="ovo-artist-cell" id='dvsn'> DVSN </div></div>
-  		<div class="ovo-song-cell" id ='Personal'> Wanting You <div class="ovo-artist-cell" id='plaza'> Plaza </div></div>
-  </div>
-
-  <script> 
-  // YOUTUBE API CODE
-      // This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '0',
-          width: '0',
-          videoId: '',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      $("#restart").click(function(){
-        stopVideo();
-      })
-
-      $("#playing").click(function(){
-        playVideo();
-      })
-
-      $("#play").click(function(){
-        player.loadVideoById("6J_OV8krhew");
-        setTimeout(function(){
-        playVideo();
-      }, )
-
-      })
-
-      $("#play2").click(function(){
-        player.loadVideoById("w31bxXWv4i4");
-        playVideo();
-
-      })
-
-      $("#play3").click(function(){
-        player.loadVideoById("t4b-vgVuInE");
-        playVideo();
-
-        //cFkoM7QLMwY
-
-      })
-
-      $("#play4").click(function(){
-        player.loadVideoById("fcPDBXgdtbY");
-        playVideo();
-
-      })
-
-        $("#play5").click(function(){
-        player.loadVideoById("4WI_lF_xxG4");
-        playVideo();
-
-      })
-
-      $("#stop").click(function(){
-        stopVideo();
-      })
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          //setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
-
-      function playVideo() {
-        player.playVideo();
-      }   
-  </script>
-
-</body>
+     <script> 
+         // YOUTUBE API CODE
+             // This function creates an <iframe> (and YouTube player)
+             //    after the API code downloads.
+             var player;
+             function onYouTubeIframeAPIReady() {
+               player = new YT.Player('player', {
+                 height: '0',
+                 width: '0',
+                 videoId: '',
+                 events: {
+                   'onReady': onPlayerReady,
+                   'onStateChange': onPlayerStateChange
+                 }
+               });
+             }
+         
+             $("#restart").click(function(){
+               stopVideo();
+             })
+         
+             $("#playing").click(function(){
+               playVideo();
+             })
+         
+             $("#play").click(function(){
+               player.loadVideoById("6J_OV8krhew");
+               setTimeout(function(){
+               playVideo();
+             }, )
+         
+             })
+         
+             $("#play2").click(function(){
+               player.loadVideoById("w31bxXWv4i4");
+               playVideo();
+         
+             })
+         
+             $("#play3").click(function(){
+               player.loadVideoById("t4b-vgVuInE");
+               playVideo();
+         
+               //cFkoM7QLMwY
+         
+             })
+         
+             $("#play4").click(function(){
+               player.loadVideoById("fcPDBXgdtbY");
+               playVideo();
+         
+             })
+         
+               $("#play5").click(function(){
+               player.loadVideoById("4WI_lF_xxG4");
+               playVideo();
+         
+             })
+         
+             $("#stop").click(function(){
+               stopVideo();
+             })
+         
+             // 4. The API will call this function when the video player is ready.
+             function onPlayerReady(event) {
+               event.target.playVideo();
+             }
+         
+             // 5. The API calls this function when the player's state changes.
+             //    The function indicates that when playing a video (state=1),
+             //    the player should play for six seconds and then stop.
+             var done = false;
+             function onPlayerStateChange(event) {
+               if (event.data == YT.PlayerState.PLAYING && !done) {
+                 //setTimeout(stopVideo, 6000);
+                 done = true;
+               }
+             }
+             function stopVideo() {
+               player.stopVideo();
+             }
+         
+             function playVideo() {
+               player.playVideo();
+             }   
+      </script>
+   </body>
 </html>
-
 <!-- OUTSIDE RESOURCES -->
 <!-- HAMBURGER MENU https://codepen.io/anon/pen/xQaqda -->
 <!-- YOUTUBE PLAYER API https://developers.google.com/youtube/iframe_api_reference -->
-
