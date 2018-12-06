@@ -68,6 +68,17 @@ top: -10px; left:-10px;
     background: none;
   }
 
+  .flickity-button-icon {
+    fill: #FFF;
+}
+.flickity-button:hover {
+    background: none;
+    cursor: pointer;
+}
+/*  button:hover {
+    background-color: none;
+    color: #000;
+}*/
 /* STYLING FOR THE HAMBURGER MENU */
   .toggle-button {
     position: fixed;
