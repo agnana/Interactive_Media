@@ -45,11 +45,12 @@
     z-index:1;
   }
 
-  #player {
-/*    width:1px; height:1px;*/
-
-position:fixed; 
-top: -10px; left:-10px;
+  #option{
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform:translateX(-50%);
+    z-index:1;
   }
 
 /* FLICKITY DOTS TO LINES */
@@ -71,14 +72,11 @@ top: -10px; left:-10px;
   .flickity-button-icon {
     fill: #FFF;
 }
-.flickity-button:hover {
-    background: none;
-    cursor: pointer;
+  .flickity-button:hover {
+      background: none;
+      cursor: pointer;
 }
-/*  button:hover {
-    background-color: none;
-    color: #000;
-}*/
+
 /* STYLING FOR THE HAMBURGER MENU */
   .toggle-button {
     position: fixed;
@@ -272,25 +270,6 @@ top: -10px; left:-10px;
   }
     #plaza{
       color:#EDD8E9;
-    }
-
-  #Final{
-    -webkit-text-stroke: 1px #FFFFFF;
-    color:#101010;
-    position: relative;
-    font-size:2vw;
-    letter-spacing: 0.50em;
-    }
-
-    #fin{
-    font-family: 'IBM Plex Sans', sans-serif;
-    text-transform: uppercase;
-    font-size:0.85vw;
-    color:#FEDA00;
-    padding: 0.1vh 50vh;
-    position: absolute;
-    top:55%;
-    text-align:center;
     }
 
 /* MEDIA DIMENSIONS */
