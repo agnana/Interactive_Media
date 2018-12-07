@@ -30,8 +30,8 @@ opacity:0.75;
 transition-duration: 0.50s;
 }
 button:hover {
-background-color: #FEDA00; /* GOLDEN YELLOW */
-color: #000;
+background-color: #2B2B2B;
+color: #F1DD38;  /* GOLDEN YELLOW */
 }
 #menu{
 position: fixed;
@@ -58,12 +58,14 @@ width: 40px;
 margin: 0;
 border-radius: 0;
 }
+.flickity-button-icon {
+fill: none;
+stroke: #FFFF;
+stroke-width: 5px;
+}
 .flickity-button {
 position: absolute;
 background: none;
-}
-.flickity-button-icon {
-fill: #FFF;
 }
 .flickity-button:hover {
 background: none;
@@ -245,12 +247,63 @@ background-size: 60%;
 
 /* MEDIA DIMENSIONS */
 @media (max-width: 1000px)  and (orientation: portrait) {
-.ovo {
-font-size:15vw;
-}
-}
-@media (max-width: 1000px)  and (orientation: landscape) {
-.ovo {
-font-size:30vw;
-}
+   /* RESIZE MAIN FONT */  
+  .ovo {
+  font-size:15vw;
+  }
+
+  /* BG RELOCATION */  
+  #Free{
+  background-size: 65%;
+  }
+  #Naked{
+  background-size: 55%;
+  }
+  #NewNew{
+  background-size: 70%;
+  }
+  #Mood{
+    background-size: 52%;
+  }
+  #Personal{
+    font-size:10vw;
+    background-size: 70%;
+  }
+
+  /* REPOSITION ARTIST CELL*/   
+  .ovo-artist-cell{
+  position: absolute;
+  top:60%;
+  font-size:2vw;
+  }
+
+  /* REPOSITION BUTTONS*/  
+  #menu{
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  transform:translateX(-20%);
+  z-index:1;
+  }
+  #option{
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform:translateX(-50%);
+  z-index:1;
+  }
+  #playing,
+  #stop,
+  #restart{
+  font-size: 35px;
+  }
+  button {
+  padding:15px 8px;
+  font-size: 25px;
+  }
+
+   /* RESIZE OVERLAY TEXT*/ 
+  .overlay ul {
+  font-size:3vw;
+  }
 }
