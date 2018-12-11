@@ -39,6 +39,7 @@ top: 25%;
 left: 50%;
 transform:translateX(-50%);
 z-index:1;
+font-size:40px;
 }
 #option{
 position: fixed;
@@ -46,6 +47,7 @@ top: 67%;
 left: 50%;
 transform:translateX(-50%);
 z-index:1;
+font-size:40px;
 }
 
 /* FLICKITY DOTS TO LINES */
