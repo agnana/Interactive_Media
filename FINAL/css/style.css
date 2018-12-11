@@ -6,243 +6,243 @@
 /* STYLING FOR ENTIRE SITE */
 html,
 body{
-background:#101010;
-margin:0;
+  background:#101010;
+  margin:0;
 }
 .container {
-height: 100vh;
-width: 100%;
+  height: 100vh;
+  width: 100%;
 }
 
 /* STYLING FOR HYPERLNKS + BUTTONS */
 a{
-text-decoration:none;
-color:#FFFF;
+  text-decoration:none;
+  color:#FFFF;
 }
 button {
-padding:10px 24px;;
-color:#FFFF;
-background:#000;
-border: none;
-font-family: 'Quantico', sans-serif;
-opacity:0.75;
--webkit-transition-duration: 0.50s; 
-transition-duration: 0.50s;
+  padding:10px 24px;;
+  color:#FFFF;
+  background:#000;
+  border: none;
+  font-family: 'Quantico', sans-serif;
+  opacity:0.75;
+  -webkit-transition-duration: 0.50s; 
+  transition-duration: 0.50s;
 }
 button:hover {
-background-color: #2B2B2B;
-color: #F1DD38;  /* GOLDEN YELLOW */
+  background-color: #2B2B2B;
+  color: #F1DD38;  /* GOLDEN YELLOW */
 }
 #menu{
-position: fixed;
-top: 25%;
-left: 50%;
-transform:translateX(-50%);
-z-index:1;
-font-size:40px;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform:translateX(-50%);
+  z-index:1;
+  font-size:40px;
 }
 #option{
-position: fixed;
-top: 67%;
-left: 50%;
-transform:translateX(-50%);
-z-index:1;
-font-size:40px;
+  position: fixed;
+  top: 67%;
+  left: 50%;
+  transform:translateX(-50%);
+  z-index:1;
+  font-size:40px;
 }
 
 /* FLICKITY DOTS TO LINES */
 .flickity-page-dots {
-bottom: -22px;
+  bottom: -22px;
 }
 .flickity-page-dots .dot {
-height: 4px;
-width: 40px;
-margin: 0;
-border-radius: 0;
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
 }
 .flickity-button-icon {
-fill: none;
-stroke: #FFFF;
-stroke-width: 5px;
+  fill: none;
+  stroke: #FFFF;
+  stroke-width: 5px;
 }
 .flickity-button {
-position: absolute;
-background: none;
+  position: absolute;
+  background: none;
 }
 .flickity-button:hover {
-background: none;
-cursor: pointer;
+  background: none;
+  cursor: pointer;
 }
 
 /* STYLING FOR THE HAMBURGER MENU */
 .toggle-button {
-position: fixed;
-top: 10px;
-/*HORIZONTAL CENTERING: https://css-tricks.com/forums/topic/horizontal-centering-of-an-absolute-element/ */
-left: 50%;
--webkit-transform: translateX(-50%);
-transform: translateX(-50%);  
-padding: 9px 10px;
-margin: 8px 15px 8px 0;
-height: 30px;
-width: 30px;
-cursor: pointer;
-z-index: 3;
+  position: fixed;
+  top: 10px;
+  /*HORIZONTAL CENTERING: https://css-tricks.com/forums/topic/horizontal-centering-of-an-absolute-element/ */
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);  
+  padding: 9px 10px;
+  margin: 8px 15px 8px 0;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 3;
 }
 .bar {
-background-color: none;
-outline-width: 0.25px;
-outline-style: solid;
-color:#FFFF;
-display:block;
-width: 100%;
-height: 4px;
-/*border: 0;*/
--webkit-transition: all .50s ease;
-transition: all .50s ease;
+  background-color: none;
+  outline-width: 0.25px;
+  outline-style: solid;
+  color:#FFFF;
+  display:block;
+  width: 100%;
+  height: 4px;
+  /*border: 0;*/
+  -webkit-transition: all .50s ease;
+  transition: all .50s ease;
 }
 .bar + .bar {
-margin-top: 4px;
+  margin-top: 4px;
 }
 .middle {
-top: 15px;
+  top: 15px;
 }
 .bottom {
-top: 30px;
+  top: 30px;
 }
 .toggle-button:hover {
-opacity: .75;
+  opacity: .75;
 }
 .toggle-active .bar {
-background-color: #FEDA00;
+  background-color: #FEDA00;
 }
 .toggle-active .top {
--webkit-transform: translateY(10px) translateX(0) rotate(45deg);
+  -webkit-transform: translateY(10px) translateX(0) rotate(45deg);
 }
 .toggle-active .middle {
-opacity: 0;
+  opacity: 0;
 }
 .toggle-active .bottom {
--webkit-transform: translateY(-6px) translateX(0) rotate(-45deg);
+  -webkit-transform: translateY(-6px) translateX(0) rotate(-45deg);
 }
 
 /* STYLING FOR THE OVERLAY. THE SLIDING-DOWN EFFECT OF THE OVERLAY IS GIVEN BY THE INITIAL ZERO HEIGHT AND THE ONCLICK 100% HEIGHT */
 .overlay {
-position: fixed;
-background-image: linear-gradient(180deg, #262626 0%, #101010 100%);
-top: 0;
-left: 0;
-width: 100%;
-height: 0;
-visibility: hidden;
-opacity: 0;
--webkit-transition: opacity .30s, visibility .30s, height .30s;
-z-index:2;
+  position: fixed;
+  background-image: linear-gradient(180deg, #262626 0%, #101010 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .30s, visibility .30s, height .30s;
+  z-index:2;
 }
 
 /* CLASS ADDED TO THE OVERLAY ON CLICK*/
 .nav-active {
-opacity: 1;
-visibility: visible;
-height: 100%;
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
 }
 .overlay ul {
-display: block;
-position: relative;
-top: 60px;
-left: 0;
-font-family: 'IBM Plex Sans', sans-serif;
-font-size:1.10vw;
-letter-spacing: 0.50em;
-text-transform: uppercase;
-text-align: center;
-list-style: none;
-padding: 0;
+  display: block;
+  position: relative;
+  top: 60px;
+  left: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size:1.10vw;
+  letter-spacing: 0.50em;
+  text-transform: uppercase;
+  text-align: center;
+  list-style: none;
+  padding: 0;
 }
 .overlay ul li {
-display: block;
+  display: block;
 }
 .overlay ul li a {
-color: #fff;
-text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 .hidden {
-opacity: 0;
+  opacity: 0;
 }
 
 /* OVO CELLS */
 .ovo{
-width:100vw;
-height:80vh; 
-font-size: 9vw;
-font-family: 'Palanquin Dark', sans-serif;
-text-transform: uppercase;
-letter-spacing: 0.10em;
+  width:100vw;
+  height:80vh; 
+  font-size: 9vw;
+  font-family: 'Palanquin Dark', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
 }
 .ovo-song-cell{
-width:100vw;
-height:80vh;
-background:#101010;
-display: flex;
-justify-content: center;
-align-items: center;
-background-clip: text;
--webkit-background-clip: text;
-color: transparent;
+  width:100vw;
+  height:80vh;
+  background:#101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .ovo-artist-cell{
-font-family: 'IBM Plex Sans', sans-serif;
-text-transform: uppercase;
-letter-spacing: 0.50em;
--webkit-text-stroke: 1px;
-display: flex;
-position: absolute;
-top:68%;
-font-size:1.5vw;
-float:left;  
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.50em;
+  -webkit-text-stroke: 1px;
+  display: flex;
+  position: absolute;
+  top:68%;
+  font-size:1.5vw;
+  float:left;  
 }
 
 /* THE SONG + ARTIST NAME */
 #OVO{
--webkit-text-stroke: 1.5px #FFFFFF;
-color:#101010;
-position: relative;
+  -webkit-text-stroke: 1.5px #FFFFFF;
+  color:#101010;
+  position: relative;
 }
   #stream{
   color:#F1DD38;
   }
 #Free{
-background-image: url(http://majidjordan.com/app/uploads/2018/09/majid-jordan-spirit-banner2.jpg);
-background-size: 60%;
+  background-image: url(http://majidjordan.com/app/uploads/2018/09/majid-jordan-spirit-banner2.jpg);
+  background-size: 60%;
 }
   #majid{
   color: #EB494B;
   }
 #Naked{
-background-image: url(https://media.gq.com/photos/57b5c8a57c4c5fcf03df6337/16:9/pass/party-next-door-04.jpg);
-background-size: 60%;
+  background-image: url(https://media.gq.com/photos/57b5c8a57c4c5fcf03df6337/16:9/pass/party-next-door-04.jpg);
+  background-size: 60%;
 }
   #pnd{
   color:#D89369;
   }
 #NewNew{
-background-image: url(https://static.highsnobiety.com/wp-content/uploads/2016/04/20111936/ovo-spring-2016-roy-woods-00.jpg);
-background-size: 60%;
+  background-image: url(https://static.highsnobiety.com/wp-content/uploads/2016/04/20111936/ovo-spring-2016-roy-woods-00.jpg);
+  background-size: 60%;
 }
   #roy{
   color:#FEFDFB;
   }
 #GetIt{
-background-image: url(https://consequenceofsound.files.wordpress.com/2016/07/07212016_dvsn_erwincenter_saramarjoriestrick20160720_0003.jpg?quality=80);
-background-size: 80%;
+  background-image: url(https://consequenceofsound.files.wordpress.com/2016/07/07212016_dvsn_erwincenter_saramarjoriestrick20160720_0003.jpg?quality=80);
+  background-size: 80%;
 }
 /*https://aestheticmag.files.wordpress.com/2017/07/dvsn-canada-150-toronto-2017-2-copy.jpg*/
   #dvsn{
   color:#94B2FE;
   }
 #HoldUp{
-background-image: url(http://www.16bars.de/wp-content/uploads/2017/06/Bildschirmfoto-2017-06-12-um-15.05.17-750x400.png);
-background-size: 60%;
+  background-image: url(http://www.16bars.de/wp-content/uploads/2017/06/Bildschirmfoto-2017-06-12-um-15.05.17-750x400.png);
+  background-size: 60%;
 }
   #plaza{
   color:#EDD8E9;
